@@ -1,0 +1,17 @@
+# Sortie de build Fresh
+_fresh/
+
+# Dépendances / vendor
+node_modules/
+vendor/
+
+# Env
+.env
+.env.local
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
