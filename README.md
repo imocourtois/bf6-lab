@@ -3,10 +3,8 @@
 **Site en ligne : <https://imocourtois.github.io/bf6-lab/>**
 
 Fiches balistiques Battlefield 6 : profil de dégâts par distance, TTK réel contre une cible réglable,
-comparaison de tout l'arsenal, garage véhicules. Le pendant BF6 de
-[CHAMP LAB](https://github.com/imocourtois/champ-lab) — même stack **Deno 2 + Fresh 2**, même look
-terminal/HUD 100 % CSS, même philosophie : sobre, honnête, statique. Pas de stats joueur, pas de pub, pas de
-tracker.
+comparaison de tout l'arsenal, garage véhicules. Propulsé par **Deno 2 + Fresh 2**, interface terminal/HUD 100
+% CSS — sobre, honnête, statique. Pas de stats joueur, pas de pub, pas de tracker.
 
 ## Les pages
 
@@ -98,7 +96,7 @@ data/vehicles.ts        fiches véhicules (éditorial)
 data/generated/         snapshot armes généré — ne pas éditer à la main
 scripts/fetch-data.ts   pipeline de données (source → snapshot)
 scripts/build-static.ts export statique pour GitHub Pages
-static/styles.css       design system terminal/HUD (hérité de CHAMP LAB)
+static/styles.css       design system terminal/HUD (cadres, dithering, scanlines)
 ```
 
 ## Licence & affiliation
