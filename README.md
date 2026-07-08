@@ -3,8 +3,9 @@
 **Site en ligne : <https://imocourtois.github.io/bf6-lab/>**
 
 Fiches balistiques Battlefield 6 : profil de dégâts par distance, TTK réel contre une cible réglable,
-comparaison de tout l'arsenal, garage véhicules. Propulsé par **Deno 2 + Fresh 2**, interface terminal/HUD 100
-% CSS — sobre, honnête, statique. Pas de stats joueur, pas de pub, pas de tracker.
+comparaison de tout l'arsenal, garage véhicules. **Deno 2 + Fresh 2**, look
+terminal/HUD 100 % CSS, philosophie : sobre, honnête, statique. Pas de stats joueur, pas de pub, pas de
+tracker.
 
 ## Les pages
 
