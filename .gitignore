@@ -1,5 +1,6 @@
-# Sortie de build Fresh
+# Sorties de build (Fresh + export statique GitHub Pages)
 _fresh/
+dist/
 
 # Dépendances / vendor
 node_modules/

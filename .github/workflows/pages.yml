@@ -1,0 +1,50 @@
+# Déploiement GitHub Pages : build Fresh → export statique → Pages.
+# Le site étant entièrement énumérable (4 pages + 1 labo par arme, un seul
+# îlot client), on le fige en HTML avec scripts/build-static.ts.
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Vérifications (fmt + lint + types)
+        run: deno task check
+      - name: Tests du moteur
+        run: deno task test
+      - name: Build Fresh
+        run: deno task build
+      - name: Export statique
+        run: deno run -A scripts/build-static.ts
+        env:
+          BASE_PATH: /bf6-lab
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
