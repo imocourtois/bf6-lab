@@ -1,6 +1,6 @@
 # BF6 LAB — ce que font vraiment tes armes & véhicules
 
-**Site en ligne : <https://imocourtois.github.io/bf6-lab/>**
+**Site en ligne : <https://simon256px.github.io/bf6-lab/>**
 
 Fiches balistiques Battlefield 6 : profil de dégâts par distance, TTK réel contre une cible réglable,
 comparaison de tout l'arsenal, garage véhicules. **Deno 2 + Fresh 2**, look
