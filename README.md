@@ -2,9 +2,9 @@
 
 **Site en ligne : <https://simon256px.github.io/bf6-lab/>**
 
-Fiches balistiques Battlefield 6 : profil de dégâts par distance, TTK réel contre une cible réglable,
+Fiches balistiques Battlefield 6: profil de dégâts par distance, TTK réel contre une cible réglable,
 comparaison de tout l'arsenal, garage véhicules. **Deno 2 + Fresh 2**, look
-terminal/HUD 100 % CSS, philosophie : sobre, honnête, statique. Pas de stats joueur, pas de pub, pas de
+terminal/HUD 100 % CSS, philosophie: sobre, honnête, statique. Pas de stats joueur, pas de pub, pas de
 tracker.
 
 <img width="1175" height="882" alt="bf6" src="https://github.com/user-attachments/assets/97d64150-24b7-4a5b-ba87-22e6192b1fa3" />
